@@ -1,0 +1,848 @@
+{
+	"info": {
+		"_postman_id": "dc53cf3d-6010-4eaf-a60e-3d2ccd0b4921",
+		"name": "E-Commerce API",
+		"description": "Base URL=[https://ecommerce-api-nest.onrender.com](https://ecommerce-api-nest.onrender.com)/",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49656819",
+		"_collection_link": "https://abtahimahib-6045966.postman.co/workspace/d1351757-3637-4615-8488-b069088628a3/collection/49656819-dc53cf3d-6010-4eaf-a60e-3d2ccd0b4921?action=share&source=collection_link&creator=49656819"
+	},
+	"item": [
+		{
+			"name": "Register a User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test2@example.com\",\r\n  \"password\": \"password123\",\r\n  \"fullName\": \"Test User 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/auth/register",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register a User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"test3@example.com\",\r\n  \"password\": \"password123\",\r\n  \"fullName\": \"Test User 3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/auth/register",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jan 2026 16:55:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "9be6e6b479f32508-DAC"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"be-E2xnvItGmaMzovJKIi+Gqw+0LZU\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "e3950cf3-83aa-4262"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": \"test3@example.com\",\n    \"fullName\": \"Test User 3\",\n    \"id\": \"58cc2daa-5ba4-425f-9e26-aac0fc03506a\",\n    \"role\": \"user\",\n    \"createdAt\": \"2026-01-15T16:55:33.051Z\",\n    \"updatedAt\": \"2026-01-15T16:55:33.051Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test2@example.com\",\r\n  \"password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/auth/login",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"test3@example.com\",\r\n  \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/auth/login",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jan 2026 16:55:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "221"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "9be6e706ca622508-DAC"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"107-m5aewVL1QiVQ8DhJbUG1hC1u4nc\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "ae8020d9-ed59-4660"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QzQGV4YW1wbGUuY29tIiwic3ViIjoiNThjYzJkYWEtNWJhNC00MjVmLTllMjYtYWFjMGZjMDM1MDZhIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3Njg0OTYxNDUsImV4cCI6MTc2ODU4MjU0NX0.TKActQDpem-pcZ9eXWSMR6x_nSkao8Qa5PSIC_59jaI\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwic3ViIjoiNzEzMmEyNWUtMWMxYy00MDgxLTk2YzAtNmE4Y2U2MTc2NzExIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3Njg0NjgxMTgsImV4cCI6MTc2ODU1NDUxOH0.2HYjRf3llLn2wLq0dX6RTnNQ4pYvGQbB0h1BHgK5oQ4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/users/profile",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Profile",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/users/profile",
+							"path": [
+								"users",
+								"profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jan 2026 16:56:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "9be6e7b978f62508-DAC"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"5b-Fw4UVzUcndaK+nVpkujqCIZMzyo\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "c7e5d16a-8c24-4671"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userId\": \"58cc2daa-5ba4-425f-9e26-aac0fc03506a\",\n    \"email\": \"test3@example.com\",\n    \"role\": \"user\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Product (Admin/User)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJzdWIiOiIxMWVjMTQ0MS03ZDY1LTQwYWUtOTExNS00NWMzYjFhZDQ4YzQiLCJyb2xlIjoidXNlciIsImlhdCI6MTc2ODQ2NjQ1NSwiZXhwIjoxNzY4NTUyODU1fQ.l7yBKlmRsi_vVjyKy8phdp-Kz9x8oogz0ZCNvSthw7k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sunscreen SPF\",\r\n  \"description\": \"Daily Needs\",\r\n  \"price\": 9.99,\r\n  \"stock\": 500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/products",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Product (Admin/User)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Adidas Ultra Boost\",\r\n  \"description\": \"Sportsshoes for men\",\r\n  \"price\": 99.99,\r\n  \"stock\": 1500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/products",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jan 2026 16:56:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "182"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "9be6e8beedaf2508-DAC"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"e7-HFIk5g1dyymJ+oW0Wm7rpCNNQxk\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "ee013ef9-d104-4750"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Adidas Ultra Boost\",\n    \"description\": \"Sportsshoes for men\",\n    \"price\": 99.99,\n    \"stock\": 1500,\n    \"id\": \"b8dec014-29fd-477e-b443-f590055581ce\",\n    \"currency\": \"usd\",\n    \"createdAt\": \"2026-01-15T16:56:56.118Z\",\n    \"updatedAt\": \"2026-01-15T16:56:56.118Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "List Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/products",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/products",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jan 2026 16:57:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "369"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "9be6e90a29612508-DAC"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"382-9QLI/JgSQaqEUgFuYxNM0KUNorI\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "8fae5388-292e-4f75"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"978756ad-c48e-4e58-88fc-e17d073cfe21\",\n        \"name\": \"Cool T-Shirt\",\n        \"description\": \"A very cool t-shirt\",\n        \"price\": \"29.99\",\n        \"currency\": \"usd\",\n        \"stock\": 100,\n        \"createdAt\": \"2026-01-15T08:44:03.237Z\",\n        \"updatedAt\": \"2026-01-15T08:44:03.237Z\"\n    },\n    {\n        \"id\": \"73e2e73d-ca25-4a68-bfe6-41cc2cc208fc\",\n        \"name\": \"Polo Shirt\",\n        \"description\": \"summer shirt\",\n        \"price\": \"19.99\",\n        \"currency\": \"usd\",\n        \"stock\": 50,\n        \"createdAt\": \"2026-01-15T08:45:33.200Z\",\n        \"updatedAt\": \"2026-01-15T08:45:33.200Z\"\n    },\n    {\n        \"id\": \"efe8e7a7-7b6c-4771-8cff-b7eb62566696\",\n        \"name\": \"Sunscreen SPF\",\n        \"description\": \"Daily Needs\",\n        \"price\": \"9.99\",\n        \"currency\": \"usd\",\n        \"stock\": 500,\n        \"createdAt\": \"2026-01-15T09:11:04.164Z\",\n        \"updatedAt\": \"2026-01-15T09:11:04.164Z\"\n    },\n    {\n        \"id\": \"b8dec014-29fd-477e-b443-f590055581ce\",\n        \"name\": \"Adidas Ultra Boost\",\n        \"description\": \"Sportsshoes for men\",\n        \"price\": \"99.99\",\n        \"currency\": \"usd\",\n        \"stock\": 1500,\n        \"createdAt\": \"2026-01-15T16:56:56.118Z\",\n        \"updatedAt\": \"2026-01-15T16:56:56.118Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJzdWIiOiIxMWVjMTQ0MS03ZDY1LTQwYWUtOTExNS00NWMzYjFhZDQ4YzQiLCJyb2xlIjoidXNlciIsImlhdCI6MTc2ODQ2NjQ1NSwiZXhwIjoxNzY4NTUyODU1fQ.l7yBKlmRsi_vVjyKy8phdp-Kz9x8oogz0ZCNvSthw7k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"items\": [\r\n    {\r\n      \"productId\": \"efe8e7a7-7b6c-4771-8cff-b7eb62566696\",\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/orders",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"items\": [\r\n    {\r\n      \"productId\": \"b8dec014-29fd-477e-b443-f590055581ce\",\r\n      \"quantity\": 10\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "/orders",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jan 2026 16:58:22 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "290"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "9be6ead45c402508-DAC"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"17c-Zbyl8ADmJkAx9iIvCP5lsEPI/2E\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "3d28b0e2-6678-4518"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"PENDING\",\n    \"totalAmount\": 999.9,\n    \"items\": [\n        {\n            \"productId\": \"b8dec014-29fd-477e-b443-f590055581ce\",\n            \"name\": \"Adidas Ultra Boost\",\n            \"price\": \"99.99\",\n            \"quantity\": 10\n        }\n    ],\n    \"user\": {\n        \"email\": \"test3@example.com\",\n        \"role\": \"user\"\n    },\n    \"stripePaymentIntentId\": null,\n    \"id\": \"5b95b213-d93c-4f16-8376-f78eb37e250f\",\n    \"currency\": \"usd\",\n    \"createdAt\": \"2026-01-15T16:58:22.201Z\",\n    \"updatedAt\": \"2026-01-15T16:58:22.201Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Initiate Payment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwic3ViIjoiNzEzMmEyNWUtMWMxYy00MDgxLTk2YzAtNmE4Y2U2MTc2NzExIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3Njg0NjgxMTgsImV4cCI6MTc2ODU1NDUxOH0.2HYjRf3llLn2wLq0dX6RTnNQ4pYvGQbB0h1BHgK5oQ4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/payments/create-intent/d723002c-6dc6-43bf-9bca-560f7a688ba8",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"payments",
+						"create-intent",
+						"d723002c-6dc6-43bf-9bca-560f7a688ba8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Initiate Payment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "/payments/create-intent/5b95b213-d93c-4f16-8376-f78eb37e250f",
+							"path": [
+								"payments",
+								"create-intent",
+								"5b95b213-d93c-4f16-8376-f78eb37e250f"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jan 2026 16:59:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "96"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "9be6ebc35c482508-DAC"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"7f-zGJQVQtiVaYxVne+ZrH56yluuOg\""
+						},
+						{
+							"key": "rndr-id",
+							"value": "65cdab9f-9374-4b26"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"clientSecret\": \"pi_3Sptsu7r4JNVaw9q1napFeC0_secret_azwyHQ4ENoQBWyRwLOzpvFBkr\",\n    \"paymentIntentId\": \"pi_3Sptsu7r4JNVaw9q1napFeC0\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
