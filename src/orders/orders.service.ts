@@ -56,6 +56,17 @@ export class OrdersService {
     }
 
     async updateStatus(id: string, status: OrderStatus, paymentIntentId?: string) {
+        const order = await this.findOne(id);
+        if (!order) return;
+
+        if (order.status === OrderStatus.COMPLETED) return;
+
+        if (status === OrderStatus.COMPLETED) {
+            for (const item of order.items) {
+                await this.productsService.decrementStock(item.productId, item.quantity);
+            }
+        }
+
         await this.ordersRepository.update(id, {
             status,
             stripePaymentIntentId: paymentIntentId

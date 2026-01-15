@@ -44,10 +44,3 @@ Backend API for an ecommerce system built with NestJS, PostgreSQL, and Stripe.
 2. **Payment Intent**: Frontend calls `POST /payments/create-intent/:orderId` to get a Stripe Client Secret.
 3. **Checkout**: Frontend uses Stripe Elements to confirm payment with the Client Secret.
 4. **Webhook**: Stripe sends `payment_intent.succeeded` event to `POST /payments/webhook`. Backend updates Order status to `COMPLETED`.
-
-## Deployment
-
-Project is ready for deployment on Railway/Vercel.
-- **Build**: `npm run build`
-- **Start**: `npm run start:prod`
-- Ensure env vars are set in the deployment platform.

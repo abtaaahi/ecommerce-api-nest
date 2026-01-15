@@ -30,6 +30,9 @@ export class PaymentsService {
             metadata: { orderId: order.id },
         });
 
+        // Save intent ID to order immediately
+        await this.ordersService.updateStatus(orderId, OrderStatus.PENDING, paymentIntent.id);
+
         return {
             clientSecret: paymentIntent.client_secret,
             paymentIntentId: paymentIntent.id,
